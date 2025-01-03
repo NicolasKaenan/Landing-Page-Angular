@@ -1,0 +1,3 @@
+interface NewslatterResponse{
+  message: String
+}

@@ -1,0 +1,21 @@
+<section class="form-section">
+  <div class="text">
+    <h3>Fique por dentro de novidades</h3>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+      officia necessitatibus et quam, voluptatum, excepturi in dicta dolorem
+      provident, consequuntur molestias nulla est soluta quas fuga!
+      Accusantium possimus distinctio nemo et eius ad, esse fugit iste
+      consequatur dolores alias quae doloribus minima nisi harum. Exercitationem
+      consectetur voluptates perspiciatis obcaecati id necessitatibus tenetur,
+      nobis magnam.
+    </p>
+  </div>
+  <form [formGroup]="newletterForm">
+    <label for="name">Name</label>
+    <input id="name" formControlName="name"/>
+    <label for="email">Email</label>
+    <input id="email" formControlName="email"/>
+    <btn-primary btnText="se inscreva" variant="secundary" (submit)="onSubmit()" [disabled]="!newletterForm.valid" [loading]="loading()"></btn-primary>
+  </form>
+</section>
